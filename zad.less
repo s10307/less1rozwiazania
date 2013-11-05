@@ -1,0 +1,205 @@
+body {	
+	min-width: 660px;
+	#wrapper {
+		/* width: 1024px; */
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		border-top: 1px solid black;
+		margin: 22px 15px 22px 15px;
+		font-size: 0px;
+		width: 100%;
+		max-width: 1024px;
+		@kolorbraz: #7B3F00;
+		@kolorbezowy: #ededed;
+		#banner {
+			position: relative;
+			font-size: 0px;
+			background-image: url('images/banner.png');
+			background-repeat: no-repeat;
+			background-position: right;
+			#badge {
+				position: relative;
+				float: left;
+				top: -20px;
+				left: -20px;
+			}
+			#logo {
+				position: relative;
+				left: -205px;
+			}
+			ul {
+				position: relative;
+				float: left;
+				top: 40px;
+				left: 63.5%;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-family: "Arial", sans-serif;
+				.seperator {
+						border-right: 1px solid black;
+				}
+				li {
+					display: inline;
+					padding: 0px 10px 0px 10px;
+					a:link, a:visited {
+						color: gray;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		#mainNav {
+			height: 30px;
+			background-image: url('images/bg_nav.png');
+			-webkit-background-size: 100%;
+			ul {
+				position: relative;
+				top: 1px;
+				left: -78px;
+				li {
+					position: relative;
+					top: 6px;
+					display: inline;
+					a {
+						color: white;
+						text-decoration: none;
+						padding: 7px 16px 7px 16px;
+						border-right: 1px solid black;
+						font-size: 12px;
+						font-weight: bold;
+						font-family: "Arial", sans-serif;
+					}
+					a:hover, a:active {
+						background-image: url('images/bg_nav_h.png');
+						-webkit-background-size: 100%;
+						padding: 7px 16px 7px 16px;
+					}
+				}
+			}
+		}
+		#contentWrapper {
+			p {
+				border: 0px;
+			}
+			#sidebar {
+				width: 163px; /* 163px */
+				min-width: 163px;
+				position: absolute;
+				float: left;
+				font-family: "Verdana";
+				margin-top: 17px;
+				border-bottom: 1px solid black;
+				background-color: @kolorbezowy;
+				h2 {	/* In the News */
+					background-image: url('images/bg_side_head.png');
+					-webkit-background-size: 100%;
+					padding: 6px 6px 6px 6px;
+					font-size: 15px;
+					font-family: "Verdana";
+					font-weight: bold;
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+				h3 { /* Breakthrough Technology Announced */
+					padding: 10px 5px 0px 5px;
+					line-height: 16px;
+					position: relative;
+					margin: 0px;
+					font-size: 12px;
+					font-style: oblique;
+					text-decoration: underline; 
+				}
+				a:link, a:visited {
+					color: @kolorbraz;
+					font-style: normal;
+					font-size: 12px;
+					font-weight: bold;
+					position: relative;
+					/* top: -15px; */
+				}
+				a:hover, a:active {
+					color: red;
+				}
+				p { /* Lorem ipsum */
+					font-size: 12px;
+					color: gray;
+					margin: 0px;
+					padding: 5px 5px 10px 5px;
+					position: relative;
+					top: 0px; /* -30px */
+				}
+			}
+			#main {
+				width: 64%; /* 656px */
+				min-width: 100px;
+				border-left: 1px solid black;
+				border-right: 1px solid black;
+				position: relative;
+				padding: 0px 20px 0px 20px;
+				float: left;
+				left: 163px;
+				p {
+					border: 0px;
+					width: 100%;
+					font-family: "Arial", sans-serif;
+					padding-bottom: 10px;
+					font-size: 17.5px;
+				}
+				h1 {
+					font-size: 30px;
+					color: @kolorbraz;
+					font-family: "Times New Roman", serif;
+					position: relative;
+					top: -5px;
+				}
+				.figure {
+					float: right;
+					height: 186px;
+					margin: 0px;
+					padding: 0px;
+					p {
+						position: relative;
+						top: -65px;
+						left: 60px;
+						width: 70px;
+						border: 1px dashed black;
+						background-color: white;
+						font-weight: bold;
+						font-size: 12px;
+						text-align: center;
+						padding: 3px 3px 3px 3px; 
+					}
+				}
+			}
+			#adverts {
+				width: 143px;
+				padding: 10px;
+				position: relative;
+				float: left;
+				left: 163px;
+				display: block;
+				p {
+					font-size: 12px;
+					text-align: justify;
+					font-family: "Arial", sans-serif;
+				}
+			}
+			h2 {
+				font-family: "Arial", sans-serif;
+				font-size: 18px;
+				color: #7B3F00;
+				border-bottom: 1px solid black;
+			}
+			#copyright {
+				width: 1008px;
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				background-color: @kolorbezowy;
+				padding: 8px;
+				font-weight: bold;
+				font-size: 16px;
+				clear: both;						
+			}
+		}
+	}
+}

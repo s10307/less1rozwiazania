@@ -1,0 +1,2 @@
+lessc zad.less -o zad.css
+npm install less
